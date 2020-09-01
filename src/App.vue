@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
+    <!-- <v-app-bar
       app
       elevation="0"
       dark
@@ -48,7 +48,7 @@
         <span class="mr-2">Contacto</span>
         <v-icon>mdi-email-outline</v-icon>
       </v-btn>
-    </v-app-bar>
+    </v-app-bar> -->
 
     <v-main>
       <Home title="< Hola Mundo! />"/>
@@ -79,9 +79,9 @@ export default {
 .v-toolbar {
   background-color: rgb(21, 21, 21) !important;
 }
-.v-btn:hover {
-  span {
-   color: #FFFF8D
-  }
-}
+// .v-btn:hover {
+//   span {
+//    color: #FFFF8D
+//   }
+// }
 </style>
