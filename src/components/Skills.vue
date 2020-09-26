@@ -19,7 +19,7 @@
         <v-card class="pa-1 ma-2 pb-0" color="deep-purple accent-2">
           <v-icon class="px-2">mdi-bootstrap</v-icon>
           <img
-            src="@/assets/materialize.gif"
+            src="@/assets/materialize.png"
             height="20px"
             class="mb-n1 px-2"
           />
@@ -81,7 +81,7 @@
           </div>
           <v-chip class="mr-5" color="transparent">
             <span class="mr-1 px-0">Materialize</span>
-            <img src="@/assets/materialize.gif" height="20px" />
+            <img src="@/assets/materialize.png" height="20px" />
           </v-chip>
         </v-chip>
 

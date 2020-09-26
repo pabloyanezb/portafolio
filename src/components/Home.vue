@@ -1,6 +1,10 @@
 <template>
-  <div class="blue-grey darken-4">
-    <v-img src="@/assets/fondo.gif" height="100vh" class="fondo"> </v-img>
+  <div class="color-fondo">
+    <!-- <v-img src="@/assets/fondo.gif" height="100vh" class="fondo"> </v-img> -->
+    <video autoplay loop muted playsinline class="fondo">
+      <source src="@/assets/fondo.webm" type="video/webm">
+      <source src="@/assets/fondo.mp4" type="video/mp4">
+    </video>
     <v-sheet
       class="inicio transparent text-center mt-xs-0 mt-md-15"
       width="100%"
@@ -17,7 +21,7 @@
         x-large
         dark
         class="mt-5 btn-bg"
-        @click="$vuetify.goTo('#proyectos', { offset: 50 })"
+        @click="$vuetify.goTo('#proyectos')"
       >
         <span class="mr-1">Ver proyectos</span>
         <v-icon>mdi-file-code-outline</v-icon>
@@ -46,7 +50,7 @@
       dark
       color="yellow accent-1"
       class="up"
-      @click="$vuetify.goTo('#proyectos', { offset: 50 })"
+      @click="$vuetify.goTo('#proyectos')"
     >
       <v-icon>mdi-chevron-up-circle</v-icon>
     </v-btn>
@@ -79,6 +83,12 @@ export default {
 </script>
 
 <style lang="scss">
+// Hide Opera detach video popup button
+// May remove other useful browser popups, inserted after "body" element.
+html > div[style] {
+  display: none !important;
+}
+
 .v-application {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -104,8 +114,12 @@ h3 {
   position: absolute;
   z-index: 8 !important;
 }
+.color-fondo {
+  background-color: #1e282c;
+}
 .fondo {
-  opacity: 0.35;
+  object-fit: cover;
+  opacity: 0.17;
   position: fixed !important;
   height: 100vh !important;
   width: 100% !important;

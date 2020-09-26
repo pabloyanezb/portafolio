@@ -1,7 +1,7 @@
 <template>
   <v-sheet class="section" id="proyectos" color="transparent" dark>
     <v-row justify="center">
-      <h2 class="mt-3 mb-4">
+      <h2 class="mt-3 mb-4 pt-3">
         PROYECTOS
         <v-icon class="d-none d-sm-inline">mdi-file-code-outline</v-icon>
       </h2>
@@ -30,7 +30,7 @@
               project.description
             }}</v-list-item-subtitle>
           </v-list-item-content>
-          <v-img :src="require(`@/assets/${project.img}.png`)"></v-img>
+          <v-img :src="require(`@/assets/${project.img}.png`)" :lazy-src="require(`@/assets/lazy.png`)"></v-img>
           <v-card-text>
             <v-chip-group column class="mt-n2">
               <v-chip
@@ -63,7 +63,7 @@
         </v-card>
       </v-slide-item>
     </v-slide-group>
-    <p class="d-lg-none mt-n3 text-center">Desliza para ver más proyectos >></p>
+    <p class="d-lg-none mt-n1 text-center caption">Desliza para ver más proyectos >></p>
   </v-sheet>
 </template>
 
@@ -180,5 +180,11 @@ export default {
 }
 .v-chip-group .v-chip--active {
   color: #ffffff !important;
+}
+.v-chip--clickable {
+  cursor: default !important;
+}
+.v-chip:before {
+  background-color: transparent !important;
 }
 </style>
