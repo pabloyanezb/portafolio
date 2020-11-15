@@ -94,9 +94,19 @@ export default {
         },
       },
       {
+        title: "Carro de Compras",
+        description: "Carrito de compras con React.js",
+        tools: ["React.js", "Reactstrap", "JavaScript", "CSS"],
+        img: "carrito",
+        url: {
+          repo: "https://github.com/pabloyanezb/carro-de-compras",
+          site: "https://pabloyanezb.github.io/carro-de-compras/",
+        },
+      },
+      {
         title: "Space Invaders",
         description: "Inspirado en el videojuego arcade",
-        tools: ["Javascript", "HTML", "CSS"],
+        tools: ["JavaScript", "HTML", "CSS"],
         img: "space-invaders",
         url: {
           repo: "https://github.com/pabloyanezb/space-invaders",

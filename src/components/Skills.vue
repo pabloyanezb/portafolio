@@ -49,6 +49,10 @@
           <v-icon class="px-2">mdi-firebase</v-icon>
           <v-card-text class="mt-n3 pb-2">Git | GitHub | npm | Firebase</v-card-text>
         </v-card>
+        <v-card class="pa-1 ma-2 pb-0" color="cyan darken-3">
+          <v-icon class="px-2">mdi-react</v-icon>
+          <v-card-text class="mt-n3 pb-2">React.js</v-card-text>
+        </v-card>
       </v-col>
       <v-col class="mt-7 text-center d-none d-sm-block">
         <v-chip class="pa-5 ma-2 pr-0" light color="yellow accent-1">
@@ -135,6 +139,12 @@
           <div class="mr-5">
             <span class="mr-1">Firebase</span>
             <v-icon>mdi-firebase</v-icon>
+          </div>
+        </v-chip>
+        <v-chip class="pa-5 ma-2 pr-0" color="cyan darken-3">
+          <div class="mr-5">
+            <span class="mr-1">React.js</span>
+            <v-icon>mdi-react</v-icon>
           </div>
         </v-chip>
       </v-col>
